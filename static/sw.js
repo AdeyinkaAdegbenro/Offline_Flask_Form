@@ -98,8 +98,7 @@ self.addEventListener('fetch', function(event) {
 self.addEventListener('message', function (event) {
   console.log('form data', event.data)
   if (event.data.hasOwnProperty('form_data')) {
-    // receives file data from form.js upon upload
-    // from file selection
+    // receives form data from script.js upon submission
     form_data = event.data.form_data
   }
 })
